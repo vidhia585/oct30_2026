@@ -2,4 +2,5 @@ name: myworkflow1
 on:
   push:
 jobs:
-   myjob1:  
+   myjob1:
+     runs-on:  
