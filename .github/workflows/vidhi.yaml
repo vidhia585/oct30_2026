@@ -1,0 +1,19 @@
+name: myworkflow1
+on:
+   push:
+jobs:
+  myjob1:
+    runs-on: ubuntu-latest
+    steps:
+      - name: mystep1
+        run: |
+           whoami
+           pwd
+           cd
+           ls -al
+           cat /etc/os-release
+      - name: mystep2-clone the repo in current work directory
+        uses: actions/checkout@v4
+      - name: mystep3-check the source code
+        run: ls -al     
+
