@@ -1,2 +1,3 @@
 name: myworkflow1
-
+on:
+  push:
